@@ -8,6 +8,9 @@ require("./db");
 // Handles http requests (express is node js framework)
 // https://www.npmjs.com/package/express
 const express = require("express");
+const session = require('express-session');
+const MongoStore = require('connect-mongo');
+
 
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
@@ -26,8 +29,7 @@ const capitalized = (string) =>
 
 app.locals.title = `Clever Move`;
 
-const session = require('express-session');
-const MongoStore = require('connect-mongo');
+
 
 app.use(session({
     secret: process.env.SESSION_KEY,
