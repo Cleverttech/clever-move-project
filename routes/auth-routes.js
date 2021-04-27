@@ -41,30 +41,25 @@ authRouter.get('/signup',(req,res,next)=>{
 
 authRouter.post('/signup',(req,res,next)=>{
     const {email, password, confirmPW, street, houseNum, zipCode, city} = req.body;
-    const valMsg = {
-        isValid: 'is-valid',
-        isInvalid: 'is-invalid'
-    };
-
     const address = {street, houseNum, zipCode, city};
 
 
     if(!email || !password || !confirmPW || !street || !houseNum || !zipCode || !city){
-        res.render("signup");
+        res.render("signup", {msg: 'Please fill out all fields'});
         return;
     }
 
     const re = /^[^@ ]+@[^@ ]+\.[^@ ]+$/;
 
     if (!re.test(String(email).toLowerCase())) {
-        res.render("signup", {isVal: 'is-invalid'});
+        res.render("signup", {msg: 'Enter a valid Email'});
         return;
     }
 
     const pwRe = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
     if (!pwRe.test(password)) {
-        res.render("signup", {valMsg});
+        res.render("signup", {msg: 'Enter a valid password'});
         return;
     }
     const salt = bcrypt.genSaltSync(12);

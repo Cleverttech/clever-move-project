@@ -96,7 +96,11 @@ html, body{
     padding: 1rem;
 }
 
-
+.error {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
 
 
 
