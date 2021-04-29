@@ -16,6 +16,9 @@ const MongoStore = require('connect-mongo');
 // https://www.npmjs.com/package/hbs
 const hbs = require("hbs");
 hbs.registerPartials('./views/partials');
+hbs.registerHelper('isdefined',(value)=>{
+    return value == 'declined' || value == 'accepted' ? true : false;
+});
 
 const app = express();
 
@@ -48,6 +51,12 @@ app.use("/", index);
 
 const authRoutes = require('./routes/auth-routes');
 app.use('/', authRoutes);
+
+const adminRoutes = require('./routes/admin-routes');
+app.use('/', adminRoutes);
+
+const userRoutes = require('./routes/user-routes');
+app.use('/', userRoutes);
 
 const scheduleRoutes = require('./routes/schedule-routes');
 app.use('/', scheduleRoutes);

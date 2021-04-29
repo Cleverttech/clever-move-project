@@ -18,20 +18,20 @@
                 </div>
             </div>
             <div class="row">
-                <label class="form-label "> From :</label>
+               <small class ="warning text-muted">(You can only update your current address in your user settings)</small> <label class="form-label "> From :</label> 
                 <div class="col-md-8">
 
                     <div class="form-group">
                         <label for="street1" class="form-label">Street</label>
                         <input type="text" class="form-control" id="street1" placeholder="street"
-                            value="{{userAddress.street}}">
+                            value="{{user.address.street}}">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="houseNum" class="form-label">Street no.</label>
-                        <input type="text" class="form-control" id="houseNum" placeholder="street No."
-                            value="{{userAddress.houseNum}}">
+                        <label for="houseNum" class="form-label">House No.</label>
+                        <input type="text" class="form-control" id="houseNum" placeholder="House No."
+                            value="{{user.address.houseNum}}">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                         <div class="form-group ">  
                          <label for="city1" class="form-label">City</label>
                         <input type="Text" class="form-control" id="city1" placeholder="city"
-                            value="{{userAddress.city}}">
+                            value="{{user.address.city}}">
                         </div>
                      
                     </div>
@@ -49,7 +49,7 @@
                         <div class="form-group">
                             <label for="zipcode1" class="form-label">zip code</label>
                             <input type="text" class="form-control" id="zipcode1" placeholder="zip code"
-                                value="{{userAddress.zipCode}}">
+                                value="{{user.address.zipCode}}">
                         </div>
                     </div>
                 </div>
@@ -65,14 +65,14 @@
                     <div class="form-group">
                         <label for="street" class="form-label">Street</label>
                         <input type="text" class="form-control" id="street" placeholder="street" name="street"
-                           >
+                         value="{{schedule.addressTo.street}}"  >
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="houseNum" class="form-label">Street no.</label>
-                        <input type="text" class="form-control" id="zipcode1" placeholder="street No." name="houseNum"
-                          >
+                        <label for="houseNum" class="form-label">House No.</label>
+                        <input type="text" class="form-control" id="zipcode1" placeholder="House No." name="houseNum"
+                         value="{{schedule.addressTo.houseNum}}" >
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                         <div class="form-group ">  
                          <label for="city" class="form-label">City</label>
                         <input type="Text" class="form-control" id="city" placeholder="city" name="city"
-                          >
+                         value="{{schedule.addressTo.city}}">
                         </div>
                      
                     </div>
@@ -90,7 +90,7 @@
                         <div class="form-group">
                             <label for="zipcode" class="form-label">zip code</label>
                             <input type="text" class="form-control" id="zipcode" placeholder="zip code" name="zipCode"
-                              >
+                             value="{{schedule.addressTo.zipCode}}" >
                         </div>
                     </div>
                 </div>
@@ -100,13 +100,14 @@
             <div class="form-group mb-3">
                 <label for="datetime" class="form-label">Move date</label>
                 <div class='input-group date' id='datetime'>
-                    <input type='datetime-local' class="form-control" name="date" />
-
+                    <input type='datetime-local' class="form-control" name="date" placeholder="{{schedule.date}}"/>
+              
                 </div>
+  
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Request description :</label>
-                <textarea class="form-control" id="description" rows="3" name="description"></textarea>
+                <textarea class="form-control" id="description" rows="3" name="description">{{schedule.description}}</textarea>
             </div>
 
 
@@ -117,7 +118,7 @@
             </div>
             <div class="form-group ">
 
-                <button type="submit" id="schedule" class="btn btn-primary btn-lg">Submit</button>
+                <button type="submit" id="schedule" class="btn btn-primary btn-lg">confirm</button>
 
             </div>
         </form>
