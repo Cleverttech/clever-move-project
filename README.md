@@ -3,7 +3,7 @@ Clever Move
 ## Description
 Moving company providing the main service of moving customers belongings from one locations to the other.
 
-<img src="https://github.com/Cleverttech/clever-move-project/blob/main/clever-move.PNG" alt="demo-Image" margin="auto 0px" width="370" height="200"/>
+<img src="https://github.com/Cleverttech/clever-move-project/blob/main/clever-move-demo.PNG" alt="demo-Image" margin="auto 0px" width="370" height="200"/>
 
 [Live- Demo / Deploy Link](https://clevermove.herokuapp.com/)
 ## User Stories
