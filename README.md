@@ -2,8 +2,8 @@
 Clever Move
 ## Description
 Moving company providing the main service of moving customers belongings from one locations to the other.
-[LIVE DEMO](https://trello.com) Add Demo Image
-[Deploy Link](http://heroku.com)
+<img src="https://github.com/Cleverttech/Dragon-slay/blob/main/clever-move.PNG" alt="demo-Image" margin="auto 0px" width="455" height="179"/>
+[Live- Demo / Deploy Link](https://clevermove.herokuapp.com/)
 ## User Stories
 - **404** - As a user I want to see a nice 404 page when I go to a page that doesn't exist so that I know it was my fault 
 - **500** - As a user I want to see a nice error page when the super team screws it up so that I know that is not my fault
