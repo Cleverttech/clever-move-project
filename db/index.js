@@ -6,8 +6,7 @@ const mongoose = require("mongoose");
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
 
 const MONGO_URI =
-  process.env.MONGODB_URI ||
-  "mongodb+srv://cleverMoveDB:SESSION_KEY=dzidzi@cluster0.crjqy.mongodb.net/cleverMoveDB?retryWrites=true&w=majority";
+  process.env.MONGODB_URI || "mongodb://localhost/clever-move-project";
 
 mongoose
   .connect(MONGO_URI, {
