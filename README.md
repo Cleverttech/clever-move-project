@@ -2,7 +2,7 @@
 Clever Move
 ## Description
 Moving company providing the main service of moving customers belongings from one locations to the other.
-<img src="https://github.com/Cleverttech/clever-move-project/blob/main/clever-move.PNG" alt="demo-Image" margin="auto 0px" width="455" height="179"/>
+<img src="https://github.com/Cleverttech/clever-move-project/blob/main/clever-move.PNG" alt="demo-Image" margin="auto 0px" width="370" height="200"/>
 [Live- Demo / Deploy Link](https://clevermove.herokuapp.com/)
 ## User Stories
 - **404** - As a user I want to see a nice 404 page when I go to a page that doesn't exist so that I know it was my fault 
