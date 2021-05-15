@@ -11,6 +11,7 @@ html, body{
 
 .heading-color{
     color:#1D3561;
+    font-size: 2em;
 }
  
 .navbar{
@@ -74,6 +75,17 @@ footer{
 
     text-align: center;
 }
+#ads{
+    margin:0px;
+    font-size: 10px;
+   }
+   .ad-links {
+text-decoration: none;
+   }
+
+   a.ad-links small:hover{
+color:rgb(0, 140, 255);
+   }
 
 /*---Media Queries --*/
 @media (min-width: 992px) { 
@@ -91,8 +103,10 @@ footer{
        font-size:1.6em;
        border-radius: 40px;
     }
+    #team-image{
+    margin-top:55px;
+    }
   
-   
 }
 
 @media (min-width: 577px) {
@@ -100,7 +114,7 @@ footer{
         left:96.5%;
    }
 }
- 
+
 @media (max-width: 576px) {
   p {
     font-size: small;
@@ -115,10 +129,7 @@ footer{
    #scheduleButton{
     font-size:0.8em;
  }
- #ads{
-  margin:0px;
-  font-size: 10px;
- }
+
  #ads p{
   font-size: small;
  }

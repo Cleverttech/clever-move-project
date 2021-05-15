@@ -131,12 +131,16 @@ time: String
 
 [trello board]<img src="https://github.com/Cleverttech/clever-move-project/blob/main/Trello-board.PNG" alt="demo-Image" margin="auto 0px" />
 
-### Git
+### Pair programming
 
-The url to your repository and to your deployed project
-[Repository Link](http://github.com)
+Collaborated on this project with
+[Manuel Pagés Gonzales](https://github.com/mpagon25)
 
 ### Slides
 
 The url to your presentation slides
-[Slides Link](http://slides.com)
+[Slides Link](https://my.visme.co/view/pv666kzv-dz6517g8vjy35k0w#s1)
+
+### Images-source
+
+[Photos by Ketut Subiyanto from Pexels](https://www.pexels.com/@ketut-subiyanto)
