@@ -14,6 +14,9 @@ html, body{
     font-size: 2em;
 }
  
+.card-title{
+    color:#1D3561;
+}
 .navbar{
     padding:1.2rem;
 }
