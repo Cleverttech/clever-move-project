@@ -70,6 +70,10 @@ html, body{
     color: white;
 }
 
+footer{
+
+    text-align: center;
+}
 
 /*---Media Queries --*/
 @media (min-width: 992px) { 
@@ -98,10 +102,26 @@ html, body{
 }
  
 @media (max-width: 576px) {
+  p {
+    font-size: small;
+  }
+  h2.heading-color{
+      font-size: 1.3em;
+  }
 
     #usericon {
         left:95%;
    }
+   #scheduleButton{
+    font-size:0.8em;
+ }
+ #ads{
+  margin:0px;
+  font-size: 10px;
+ }
+ #ads p{
+  font-size: small;
+ }
  
 }
 
