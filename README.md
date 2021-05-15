@@ -129,7 +129,7 @@ time: String
 
 ### Trello
 
-[trello board]<img src="https://github.com/Cleverttech/clever-move-project/blob/main/clever-move-demo.PNG" alt="demo-Image" margin="auto 0px" />
+[trello board]<img src="https://github.com/Cleverttech/clever-move-project/blob/main/Trello-board.PNG" alt="demo-Image" margin="auto 0px" />
 
 ### Git
 
